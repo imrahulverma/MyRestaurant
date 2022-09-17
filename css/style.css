@@ -24,6 +24,7 @@ header{
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 50;
 }
 .nav{
     display: flex;
@@ -140,6 +141,9 @@ align-items: center;
     .features img{
         width: 40px;
     }
+    .features{
+        flex-direction: column;
+    }
 }
 
 /* menu  */
@@ -162,6 +166,15 @@ align-items: center;
     grid-template-rows: auto auto auto ;
     gap: 10px;
     display: grid;
+    
+}
+.grid img{
+    border-radius: 5px;
+    width: 100%;
+}
+.grid img:hover{
+    transform:scale(1.05);
+    transition: 0.2s all ease-in-out;
 }
 
 .item1{
